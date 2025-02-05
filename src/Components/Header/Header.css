@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  background-color: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+
+  & h1 {
+    position: relative;
+    left: 5%;
+  }
+
+  & .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & .Expenselogo {
+      transform: scale(0.7);
+    }
+  }
+}

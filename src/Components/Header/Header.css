@@ -1,7 +1,7 @@
 header {
   display: flex;
-  background-color: #000;
-  color: white;
+  background: linear-gradient(30deg, grey, black);
+  color: whitesmoke;
   margin: 0;
   padding: 0;
   justify-content: space-between;

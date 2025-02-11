@@ -3,7 +3,7 @@ import ExpenseForm from "./ExpenseForm";
 import ExpenseList from "./ExpenseList";
 import "./Body.css";
 
-const Body = () => {
+const Body = (props) => {
   const [list, setList] = React.useState([]);
 
   React.useEffect(() => {
@@ -29,12 +29,15 @@ const Body = () => {
     });
   }
 
+
   return (
     <div className="BodyList">
-      <React.Fragment>
-        <ExpenseForm addItem={addItem} data={list} />
-        <ExpenseList itemList={list} removeItem={removeItem} />
-      </React.Fragment>
+      {!props.dashboard && (
+        <React.Fragment>
+          <ExpenseForm addItem={addItem} data={list} />
+          <ExpenseList itemList={list} removeItem={removeItem} />
+        </React.Fragment>
+      )}
     </div>
   );
 };

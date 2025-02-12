@@ -3,7 +3,7 @@ import React from "react";
 const History = (props) => {
   return (
     <section>
-       <h1>Recent History</h1>
+       <h1 className="hist">Recent History</h1>
       {props.items.length <= 0 ? (
         <h1>No Item Found In History</h1>
       ) : (

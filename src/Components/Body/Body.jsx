@@ -31,15 +31,17 @@ const Body = (props) => {
   }
 
   return (
-    <div className="BodyList">
-      {props.dashboard && <Dashboard items={list}/>}
+    <React.Fragment>
+      {props.dashboard && <Dashboard items={list} />}
       {props.expense && (
-        <React.Fragment>
-          <ExpenseForm addItem={addItem} data={list} />
-          <ExpenseList itemList={list} removeItem={removeItem} />
-        </React.Fragment>
+        <div className="BodyList">
+          <React.Fragment>
+            <ExpenseForm addItem={addItem} data={list} />
+            <ExpenseList itemList={list} removeItem={removeItem} />
+          </React.Fragment>
+        </div>
       )}
-    </div>
+    </React.Fragment>
   );
 };
 

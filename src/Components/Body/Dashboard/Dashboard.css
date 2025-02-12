@@ -1,5 +1,10 @@
 .Dash{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 5px;
+}
+
+.hist{
+    position: relative;
+    left: 42.5%;
 }

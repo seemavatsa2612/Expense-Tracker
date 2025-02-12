@@ -1,0 +1,33 @@
+.expenses {
+  border: 5px inset grey;
+  border-radius: 20%;
+  padding: 3%;
+  margin-top: 3%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  & h1 {
+    position: relative;
+    left: 5%;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+  }
+
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 50px;
+  border-bottom: 2px inset grey;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import ExpenseForm from "./ExpenseForm";
 import ExpenseList from "./ExpenseList";
+import Dashboard from "./Dashboard/Dashboard";
 import "./Body.css";
 
 const Body = (props) => {
@@ -29,10 +30,10 @@ const Body = (props) => {
     });
   }
 
-
   return (
     <div className="BodyList">
-      {!props.dashboard && (
+      {props.dashboard && <Dashboard items={list}/>}
+      {props.expense && (
         <React.Fragment>
           <ExpenseForm addItem={addItem} data={list} />
           <ExpenseList itemList={list} removeItem={removeItem} />

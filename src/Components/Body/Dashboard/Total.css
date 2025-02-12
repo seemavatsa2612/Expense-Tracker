@@ -1,0 +1,15 @@
+.total{
+    border: 5px inset grey;
+    border-radius: 20%;
+    padding: 3%;
+    margin-top: 3%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & h1{
+        position: relative;
+        left: 25%;
+    }
+}

@@ -1,0 +1,34 @@
+.savings{
+    border: 5px inset grey;
+    border-radius: 20%;
+    padding: 3%;
+    margin-top: 3%;
+    height: 10rem;
+
+    & div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & form{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            & label{
+                position: relative;
+                left: 15%;
+                font-size: large;
+                font-weight: 900;
+            }
+
+            & input{
+                position: relative;
+                left: 20%;
+                border-radius: 5%;
+                width: 50%
+            }
+        }
+    }
+}

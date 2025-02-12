@@ -1,9 +1,13 @@
 import React from "react";
 import "./Expense.css";
 
-const Dashboard = () => {
+const Dashboard = (props) => {
+
+  function switchmodes(){
+    props.switch();
+  }
   return (
-    <div className="Expenselogo">
+    <div className="Expenselogo" onClick={switchmodes}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
